@@ -4,14 +4,17 @@ applications:
       phases:
         preBuild:
           commands:
-            # Set Node.js version
-            - nvm use 18
-            # Install dependencies
-            - npm install -g pnpm
-            - pnpm install
+            # Set Node.js version explicitly with LTS version
+            - nvm install 18.19.1
+            - nvm use 18.19.1
+            - nvm alias default 18.19.1
+            # Install dependencies with frozen lockfile and no audit
+            - npm install -g pnpm --no-audit
+            - pnpm config set strict-peer-dependencies false
+            - PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 pnpm install --frozen-lockfile --no-optional
         build:
           commands:
-            # Create env file from Amplify environment variables
+            # Create env file with explicit environment variables
             - |
               cat << EOF > .env.production
               ADMIN_NAME=${ADMIN_NAME}
@@ -29,16 +32,24 @@ applications:
               RESEND_TO_EMAIL=${RESEND_TO_EMAIL}
               NEXTAUTH_URL=https://www.replie.me
               NEXTAUTH_SECRET=${AUTH_SECRET}
+              NODE_ENV=production
               EOF
-            # Build the Next.js application
-            - pnpm run build
+            # Verify environment file exists
+            - test -f .env.production || (echo "Environment file not created" && exit 1)
+            # Build with production flag and no source maps
+            - NEXT_TELEMETRY_DISABLED=1 NODE_ENV=production pnpm run build
+            # Copy files needed for SSR
+            - cp -r .next/standalone/* .
+            - cp -r .next/static .next/standalone/.next/static
+            - cp next.config.ts .next/standalone/
+            - cp package.json .next/standalone/
       artifacts:
-        # Main output
-        baseDirectory: .
+        baseDirectory: .next/standalone
         files:
           - '**/*'
       cache:
         paths:
           - node_modules/**/*
           - .next/cache/**/*
+          - .pnpm-store/**/*
     appRoot: .
