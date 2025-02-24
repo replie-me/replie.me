@@ -1,0 +1,26 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "443:3000"
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+      - AUTH_URL=https://localhost
+      - NEXT_TURBO=1
+      - HTTPS_KEY_PATH=/app/certificates/key.pem
+      - HTTPS_CERT_PATH=/app/certificates/cert.pem
+    volumes:
+      - certificates:/app/certificates
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "--no-check-certificate", "https://localhost/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  certificates: 
