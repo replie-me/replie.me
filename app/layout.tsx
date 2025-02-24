@@ -18,8 +18,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Replier - AI-Powered Social Media Comment Replier",
-  description: "Revolutionize your social media strategy with Replier. Our AI-powered tool automates responses, saves you hours daily, and boosts engagement by up to 400%. Try it free today!",
+  title: "Replie - AI-Powered Social Media Comment Replie",
+  description: "Revolutionize your social media strategy with Replie. Our AI-powered tool automates responses, saves you hours daily, and boosts engagement by up to 400%. Try it free today!",
 };
 
 export default function RootLayout({

@@ -5,8 +5,8 @@ import ContactForm from "@/components/contact-form"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Contact Us - Replier",
-  description: "Get in touch with the Replier team. We'd love to hear from you!"
+  title: "Contact Us - Replie",
+  description: "Get in touch with the Replie team. We'd love to hear from you!"
 }
 
 export default async function ContactPage() {
@@ -34,7 +34,7 @@ export default async function ContactPage() {
                   <CardContent className="space-y-4">
                     <div className="flex items-center space-x-4">
                       <Mail className="h-5 w-5 text-primary" />
-                      <span>support@replier.social</span>
+                      <span>support@replie.me</span>
                     </div>
                     {/* <div className="flex items-center space-x-4">
                       <Phone className="h-5 w-5 text-primary" />
@@ -52,8 +52,8 @@ export default async function ContactPage() {
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div>
-                      <h3 className="font-semibold">How does Replier work?</h3>
-                      <p className="text-sm text-muted-foreground">Replier uses advanced AI to generate contextually relevant responses to your social media interactions, saving you time and boosting engagement.</p>
+                      <h3 className="font-semibold">How does Replie work?</h3>
+                      <p className="text-sm text-muted-foreground">Replie uses advanced AI to generate contextually relevant responses to your social media interactions, saving you time and boosting engagement.</p>
                     </div>
                     <div>
                       <h3 className="font-semibold">Is there a free trial?</h3>
@@ -61,7 +61,7 @@ export default async function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold">How do I get started?</h3>
-                      <p className="text-sm text-muted-foreground">Simply install our Chrome extension, connect your social media accounts, and start using Replier to manage your interactions!</p>
+                      <p className="text-sm text-muted-foreground">Simply install our Chrome extension, connect your social media accounts, and start using Replie to manage your interactions!</p>
                     </div>
                   </CardContent>
                 </Card>

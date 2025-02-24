@@ -8,13 +8,13 @@ export default async function Testimonial() {
         <div className="grid md:grid-cols-3 gap-8 mt-12">
           <Card>
             <CardContent className="pt-6">
-                <p className="italic mb-4">&ldquo;Replier has revolutionized our social media strategy. We&rsquo;ve seen a 40% increase in engagement since we started using it!&rdquo;</p>
+                <p className="italic mb-4">&ldquo;Replie has revolutionized our social media strategy. We&rsquo;ve seen a 40% increase in engagement since we started using it!&rdquo;</p>
               <p className="font-semibold">- Sarah J., Marketing Director</p>
             </CardContent>
           </Card>
           <Card>
             <CardContent className="pt-6">
-                <p className="italic mb-4">&ldquo;The time-saving aspect of Replier is incredible. It&rsquo;s like having an extra team member dedicated to social media.&rdquo;</p>
+                <p className="italic mb-4">&ldquo;The time-saving aspect of Replie is incredible. It&rsquo;s like having an extra team member dedicated to social media.&rdquo;</p>
               <p className="font-semibold">- Mike T., Small Business Owner</p>
             </CardContent>
           </Card>

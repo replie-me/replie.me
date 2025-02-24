@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="border-t">
       <div className="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
         <div className="text-sm text-muted-foreground">
-          © 2024 Replier. All rights reserved.
+          © 2024 Replie. All rights reserved.
         </div>
         <nav>
           <ul className="flex space-x-4 mt-4 md:mt-0">

@@ -12,8 +12,8 @@ const isDev = process.argv.includes("--dev");
     console.log("📊 Creating billing meter...");
     const meter = await stripe.billing.meters
       .create({
-        display_name: "Replier",
-        event_name: "replier",
+        display_name: "Replie",
+        event_name: "Replie",
         default_aggregation: { formula: "sum" },
         value_settings: { event_payload_key: "generate" },
         customer_mapping: {

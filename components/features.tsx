@@ -39,7 +39,7 @@ export default async function Features() {
     <section id="features" className="bg-muted py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="text-3xl font-bold mb-6">Replier: Your AI-Powered Social Media Assistant</h2>
+          <h2 className="text-3xl font-bold mb-6">Replie: Your AI-Powered Social Media Assistant</h2>
           <p className="text-xl text-muted-foreground">
             Revolutionize your social media management with these powerful features:
           </p>

@@ -8,9 +8,9 @@ export default async function GetStarted() {
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Social Media Strategy?</h2>
         <p className="text-xl text-muted-foreground mb-8">
-          Join thousands of businesses and social media managers who are saving time and boosting engagement with Replier.
+          Join thousands of businesses and social media managers who are saving time and boosting engagement with Replie.
         </p>
-        <Link href={"https://chromewebstore.google.com/detail/ai-social-replier-gpt-res/ahfilmopkkfaehndncopogaohdkddjjd"} target="_blank">
+        <Link href={"https://chromewebstore.google.com/detail/ai-social-Replie-gpt-res/ahfilmopkkfaehndncopogaohdkddjjd"} target="_blank">
           <Button size="lg">
             Get Started Now
             <ArrowRight className="ml-2 h-4 w-4" />

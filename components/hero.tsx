@@ -18,7 +18,7 @@ export default function Hero() {
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-            Replier uses AI to automatically respond to your social media interactions,
+            Replie uses AI to automatically respond to your social media interactions,
             saving you hours daily while boosting engagement by up to 400%.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
@@ -28,7 +28,7 @@ export default function Hero() {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
-            <Link href={"https://chromewebstore.google.com/detail/ai-social-replier-gpt-res/ahfilmopkkfaehndncopogaohdkddjjd"} target="_blank">
+            <Link href={"https://chromewebstore.google.com/detail/ai-social-Replie-gpt-res/ahfilmopkkfaehndncopogaohdkddjjd"} target="_blank">
               <Button size="lg" variant="outline" className="w-full sm:w-auto">
                 <Chrome className="mr-2 h-4 w-4" />
                 Add to Chrome - 5 Free Replies

@@ -1,21 +1,21 @@
-# AI Social Replier SaaS - GPT Response Generator
+# AI Social Replie SaaS - GPT Response Generator
 
 ## Introduction
 
-Welcome to AI Social Replier SaaS or Replier in short, an AI-powered social media management tool designed to automate responses to your social media interactions. This documentation will guide you through the installation, setup, and usage of Replier, ensuring you can make the most of its features.
+Welcome to AI Social Replie SaaS or Replie in short, an AI-powered social media management tool designed to automate responses to your social media interactions. This documentation will guide you through the installation, setup, and usage of Replie, ensuring you can make the most of its features.
 
 ## Table of Contents
 
 1. [Getting Started](#getting-started)
 2. [Requirements](#requirements)
 3. [Installation](#installation)
-4. [Using Replier](#using-replier)
+4. [Using Replie](#using-Replie)
 5. [Chrome Extension](#chrome-extension)
 6. [Support](#support)
 
 ## Getting Started
 
-Replier is a lightweight application that can be run on a free Vercel account. It requires no database since we are using Stripe dashboard and APIs to their full potential. Vercel is indeed a requirement for deploying this application.
+Replie is a lightweight application that can be run on a free Vercel account. It requires no database since we are using Stripe dashboard and APIs to their full potential. Vercel is indeed a requirement for deploying this application.
 
 ## Requirements
 
@@ -33,7 +33,7 @@ Before you begin, ensure you have the following:
 1. Extract the downloaded Zip file from CodeCanyon and navigate to the project directory:
 
    ```sh
-   cd replier
+   cd Replie
    ```
 
 2. Install Dependencies:
@@ -66,7 +66,7 @@ Before you begin, ensure you have the following:
 
 4. Stripe Integration:
 
-   Replier is tightly integrated with Stripe for subscription management and billing. Follow these steps to configure Stripe in a Sandbox environment:
+   Replie is tightly integrated with Stripe for subscription management and billing. Follow these steps to configure Stripe in a Sandbox environment:
 
    - Create Stripe Products and Prices:
 
@@ -98,7 +98,7 @@ pnpm seed
 
 After the app is in production and the seed command has been run, the administrator will need to create a 100% discount coupon from Stripe production and use that coupon to make a purchase on the unlimited subscription package directly from the app. This is required as we will use the relevant subscription ID as a license key for all the free trial users who have no license key. We are offering 5 free trial AI generations from the Chrome extension for users who install it for the first time. Copy the relevant subscription ID somewhere as we will use it in the next section of the Chrome extension installation guide.
 
-## Using Replier
+## Using Replie
 
 ### Dashboard
 
@@ -110,11 +110,11 @@ Manage your subscription through the billing portal. Navigate to the billing por
 
 ### AI-Powered Replies
 
-Replier uses AI to generate contextually relevant responses to social media interactions. Simply use the extension in your social media accounts and let Replier handle the rest.
+Replie uses AI to generate contextually relevant responses to social media interactions. Simply use the extension in your social media accounts and let Replie handle the rest.
 
 ## Chrome Extension
 
-Replier includes a Chrome extension to enhance your social media management experience. Follow these steps to install and use the extension:
+Replie includes a Chrome extension to enhance your social media management experience. Follow these steps to install and use the extension:
 
 1. Extract the Chrome Extension:
 
@@ -126,13 +126,13 @@ Replier includes a Chrome extension to enhance your social media management expe
 
    ```sh
    VITE_WXT_MAX_REQUEST=5
-   VITE_WXT_SITE_URL='https://replier.social'
+   VITE_WXT_SITE_URL='https://Replie.social'
    VITE_WXT_ADMIN_LICENSE='your_license_key_from_your_site_dashboard'
    ```
 
    - `VITE_WXT_MAX_REQUEST`: The number of free AI generations allowed for free users.
    - `VITE_WXT_SITE_URL`: The site URL where you've deployed the Next.js app on Vercel recently.
-   - `VITE_WXT_ADMIN_LICENSE`: The admin license key that you purchased using the 100% coupon. Logging into the Replier site dashboard will grant you the license that needs to be used here.
+   - `VITE_WXT_ADMIN_LICENSE`: The admin license key that you purchased using the 100% coupon. Logging into the Replie site dashboard will grant you the license that needs to be used here.
 
 3. Build the Extension:
 
@@ -159,7 +159,7 @@ Replier includes a Chrome extension to enhance your social media management expe
    The extension was built using the [WXT](https://wxt.dev) framework, which offers an extensive development guide for further customization. You can customize the app name and description in the `wxt.config.ts` file.
 
 7. Publishing on Chrome Web Store:
-   Replier extension has already approved on the demo site for https://replier.social at [Chrome Web Store](https://chromewebstore.google.com/detail/ai-social-replier-gpt-res/ahfilmopkkfaehndncopogaohdkddjjd). This means you're full proof to customize the extension based on your desired needs and release it on the Chrome Web Store under your own brands name.
+   Replie extension has already approved on the demo site for https://Replie.social at [Chrome Web Store](https://chromewebstore.google.com/detail/ai-social-Replie-gpt-res/ahfilmopkkfaehndncopogaohdkddjjd). This means you're full proof to customize the extension based on your desired needs and release it on the Chrome Web Store under your own brands name.
 
 ## Support
 
@@ -167,4 +167,4 @@ If you have any questions or need assistance, please contact our support team at
 
 ---
 
-Thank you for choosing Replier! We hope you enjoy using our AI-powered social media management tool.
+Thank you for choosing Replie! We hope you enjoy using our AI-powered social media management tool.

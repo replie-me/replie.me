@@ -11,9 +11,9 @@ export default function Action() {
     <section className="bg-muted py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="text-3xl font-bold mb-6">See Replier in Action</h2>
+          <h2 className="text-3xl font-bold mb-6">See Replie in Action</h2>
           <p className="text-xl text-muted-foreground">
-            Watch how Replier transforms your Twitter interactions in real-time.
+            Watch how Replie transforms your Twitter interactions in real-time.
           </p>
         </div>
         <div className="aspect-video max-w-3xl mx-auto bg-black rounded-lg overflow-hidden">
@@ -22,7 +22,7 @@ export default function Action() {
               width="100%"
               height="100%"
               src="https://www.youtube.com/embed/30Zt7See2B0?autoplay=1"
-              title="Replier Demo Video"
+              title="Replie Demo Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
